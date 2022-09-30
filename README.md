@@ -168,3 +168,22 @@ function suma(numero1,numero2){
 }
 ```
 
+# Clausula
+
+Una clausula en una condición la cual evalúa si es falso o verdadero.
+
+```js
+addEventListener("DOMContentLoaded", (e) => {
+  let form = document.querySelector("#form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let num=1;
+    if (num=1){
+      alert("El numero es 1");
+    } else{
+      alert("El numero no es 1");
+    }
+  })
+})
+```
+
