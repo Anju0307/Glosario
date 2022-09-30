@@ -150,3 +150,21 @@ function suma(parametro){
 }
 ```
 
+# Nivel de scope
+
+Es el nivel de alcance que tiene una variable en el código.
+
+```js
+addEventListener("DOMContentLoaded", (e) => {
+  let form = document.querySelector("#form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert(suma(2,3));
+  })
+})
+function suma(numero1,numero2){
+  let suma = numero1+numero2;
+  return suma;
+}
+```
+

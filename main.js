@@ -2,8 +2,7 @@ addEventListener("DOMContentLoaded", (e) => {
     let form = document.querySelector("#form");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        let resultado;
-        suma(2,3);
+        alert(suma(2,3));
     })
 })
 function suma(numero1,numero2){
