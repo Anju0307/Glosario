@@ -140,3 +140,13 @@ function suma(numero1,numero2){
 }
 ```
 
+# Parámetros
+
+Un parámetro son los valores que se solicitan en una función.
+
+```js
+function suma(parametro){
+	return parametro;
+}
+```
+

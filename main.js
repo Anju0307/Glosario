@@ -3,9 +3,7 @@ addEventListener("DOMContentLoaded", (e) => {
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         let resultado;
-        resultado=1+2;
-        alert(resultado);
-        
+        suma(2,3);
     })
 })
 function suma(numero1,numero2){
