@@ -2,9 +2,9 @@ addEventListener("DOMContentLoaded", (e) => {
     let form = document.querySelector("#form");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        const lista = ["Juan","Pablo","Mantilla","Arias"];
-        let resul = document.querySelector("#resultado");
-        const filter = lista.filter(palabra => palabra.length <6);
-        resul.insertAdjacentHTML("beforebegin", "<br><br/>" + filter);
+        let text="Hola mundo soy el mejor";
+        let posicion = text.search("s");
+        let resultado= document.querySelector("#resultado");
+        resultado.insertAdjacentHTML("beforebegin","<br><br/>"+posicion);
     })
 })
