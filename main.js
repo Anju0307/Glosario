@@ -2,9 +2,9 @@ addEventListener("DOMContentLoaded", (e) => {
     let form = document.querySelector("#form");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
-        const lista = [1, 2, 3];
+        const lista = ["Juan","Pablo","Mantilla","Arias"];
         let resul = document.querySelector("#resultado");
-        const map = lista.map(x => x*2);
-        resul.insertAdjacentHTML("beforebegin", "<br><br/>" + map);
+        const filter = lista.filter(palabra => palabra.length <6);
+        resul.insertAdjacentHTML("beforebegin", "<br><br/>" + filter);
     })
 })
