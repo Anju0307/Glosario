@@ -1,6 +1,6 @@
-# Ciclos
+# Iteradores
 
-Repetir un proceso una cantidad de n veces mientras se cumpla la condición solicitada.
+Es un proceso del cual no podemos detener hasta que finalice la condición dada.
 
 ```js
 addEventListener("DOMContentLoaded", (e) => {
@@ -11,13 +11,11 @@ addEventListener("DOMContentLoaded", (e) => {
 
 ​    e.preventDefault();
 
-​    let resultado = document.querySelector("#resultado");
+​    const lista = [1, 2, 3];
 
-​    for (let i=1; i<=6;i++){
+​    let resul = document.querySelector("#resultado");
 
-​      resultado.insertAdjacentHTML("beforebegin","<br><br/>"+i);
-
-​    }
+​    lista.forEach(e => resul.insertAdjacentHTML("beforebegin","<br><br/>"+e));
 
   })
 
