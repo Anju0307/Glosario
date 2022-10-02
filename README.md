@@ -220,3 +220,21 @@ addEventListener("DOMContentLoaded", (e) => {
 })
 ```
 
+# Funciones expresivas
+
+La función expresiva es aquella que se va a guardar en una variable.
+
+```js
+addEventListener("DOMContentLoaded", (e) => {
+  let form = document.querySelector("#form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    e.preventDefault();
+    let saludar = function (nombre) {
+      alert(`Hola ${nombre}`);
+    }
+    saludar("Juan");
+  })
+})
+```
+
